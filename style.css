@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo {
+    justify-content: start;
+    align-content: start;
+    position: absolute;
+    width: 15%;
+    height: auto;
+    
+}
+
+.banner {
+    width: 100%;
+    height: 30vmax;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-image: url(./assets/paisagem-de-floresta-tropical-verde.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.banner:hover {
+    background-image: url(./assets/762.jpg);
+}
+
+.container{
+    position: relative;
+
+}
+.titulo{
+    margin-top: 12vmax;
+    justify-items: center;
+}
+h1 {
+    color: rgb(138, 212, 141);
+    font-size: 4rem;
+    text-shadow: 5px 5px black ;
+}
+.butao{
+    position: absolute;
+    justify-content: end;
+    color: whitesmoke;
+    top: 30px;
+    right: 10px;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+ ul {
+  list-style: none; 
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 5vmin;
+}
+
+
+ul li a {
+  text-decoration: none; 
+  color: whitesmoke;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+
+ul li a:hover {
+  color: #4caf50; 
+}
+
+
+main {
+    background-color: rgb(41, 82, 46);
+}
+
+.sobretudo {
+  display: grid;
+  grid-template-areas:
+    "cards"
+    "aside";
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.primeira {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+.card {
+  background-color: #64a864;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 50%;
+  border-radius: 8px 8px 0 0;
+}
+
+.curiosidades {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #76b176;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.formulario-contato {
+  background-color: #5aa95a;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+
+.formulario-contato form {
+    background-color: #5aa95a;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea,
+.formulario-contato select {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.formulario-contato textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.formulario-contato .termos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.formulario-contato button {
+  background-color: #2e642e;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulario-contato button:hover {
+  background-color: #4c8f4c;
+}
+
+.formulario-contato input,
+.formulario-contato textarea,
+.formulario-contato select {
+  background-color: #c0eec0; /* branco, ou use outro tom suave */
+  color: #000000; /* cor do texto */
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #428b61;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  gap: 1rem;
+  padding: 3vmin;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.footer1{
+    display: flex;
+}
+
+.footer2{
+    display: flex;
+}
+
+.footer3{
+    display: flex;
+}
+
+footer h2 {
+    text-align: center;
+}

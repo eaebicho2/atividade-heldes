@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Logo, Banner, Links d-->
+    <header>
+    <div class="container">
+        <div class="banner">
+    
+            <img class="logo" src="./assets/logoasdadasaasas.png" >
+            <div class="titulo">
+                <h1>Nature News</h1>
+
+            </div>
+        <nav>
+            <ul class="butao">
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> Sobre </a></li>
+                <li><a href="#"> TopDonates </a></li>
+                <li><a href="#"> Ajuda </a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+    </header>
+    <!-- sections, com Grid, Aside como curiosidades dicas ou noticias, com flexbox -->
+    <main class="sobretudo">
+        <!-- noticias -->
+        <section class="primeira">
+            <!-- cards -->
+            <div class="card">
+                <img src="./assets/amazonas.jpg" alt="Floresta Amazonas"  width="80vmin">
+                <h3>Floresta Amazônica Ganha Projeto de Recuperação Inédito</h3>
+                <p>A Floresta Amazônica está recebendo um dos maiores projetos de reflorestamento já feitos no Brasil. A iniciativa, liderada por ONGs ambientais e com apoio de universidades, pretende plantar mais de 100 milhões de árvores nativas até 2030. O objetivo é restaurar áreas degradadas pelo desmatamento ilegal e recuperar a biodiversidade. Além de ajudar no combate às mudanças climáticas, o projeto também vai beneficiar comunidades locais, que receberão capacitação e geração de renda sustentável. Essa ação mostra como é possível unir natureza e desenvolvimento de forma inteligente.</p>
+            </div>
+
+             <div class="card">
+                <img src="./assets/Oceano.avif" alt="Oceano ao por do sol">
+                <h3>A Importância dos Oceanos no Clima do Planeta</h3>
+                <p>Os oceanos cobrem cerca de 70% da superfície terrestre e são fundamentais para o equilíbrio do clima global. Eles absorvem grandes quantidades de dióxido de carbono (CO₂) e ajudam a regular a temperatura da Terra. Além disso, abrigam milhões de espécies marinhas e fornecem alimento para bilhões de pessoas. Porém, o aumento da poluição, especialmente por plásticos e esgoto, tem prejudicado a saúde dos oceanos. Cientistas e ativistas vêm alertando sobre a necessidade urgente de preservação marinha, e vários países já estão adotando medidas para proteger suas águas e espécies.</p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/bixinhos.jpeg" alt="Tamanduás atravessando a rua">
+                <h3>Animais Silvestres Voltam a Habitar Regiões Urbanas</h3>
+                <p>Com a redução da circulação de pessoas e o aumento de áreas verdes nas cidades, muitos animais silvestres estão reaparecendo em regiões urbanas. Recentemente, foram registrados tamanduás, capivaras, corujas e até onças-pardas em bairros próximos a parques e reservas ambientais. Especialistas explicam que esses animais estão à procura de alimentos e abrigo, e o retorno deles pode indicar um equilíbrio ecológico se formando. No entanto, é importante lembrar que eles precisam ser respeitados e que a interação humana deve ser feita com cautela e orientação ambiental.</p>
+            </div>
+        
+        </section>
+        <!-- Aside -->
+            <aside class="curiosidades">
+                <h2>Curiosidades</h2>
+                <div class="card1">
+                    <h4>Nossa mata Amazônica:</h4>
+                    <p>A Floresta Amazônica é tão grande que produz cerca de 20% do oxigênio consumido no mundo e abriga mais de 30 mil espécies de plantas diferentes.</p>
+                </div>
+                <div class="card1">
+                    <h4>O desconhecido Oceano:</h4>
+                    <p>Cerca de 95% dos oceanos ainda não foram explorados. Isso significa que sabemos mais sobre a superfície da Lua do que sobre o fundo do mar!</p>
+                </div>
+                <div class="card1">
+                    <h4>O mundo fora do nossos olhos:</h4>
+                    <p>No Brasil, capivaras, tamanduás e até onças-pardas já foram encontrados em cidades grandes, como Brasília e Campinas, graças à proximidade com áreas verdes e reservas.</p>
+                </div>
+            </aside>
+            <!-- Formulario -->
+             <section class="formulario-contato">
+                <h2>Fale Conosco</h2>
+                <form id="contatoForm" novalidate>
+                    <label for="nome">Nome completo*</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+
+                    <label for="nascimento">Data de nascimento</label>
+                    <input type="date" id="nascimento" name="nascimento">
+
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="">Selecione...</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="reclamacao">Reclamação</option>
+                    </select>
+                    <label for="mensagem">Mensagem*</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+
+                    <div class="termos">
+                        <input type="checkbox" id="aceite" required>
+                        <label for="aceite">Li e aceito os termos*</label>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="foteer1"><h2>Sobre nós</h2>
+            <p>A Nature News é um portal dedicado a levar informação de qualidade <br> sobre meio ambiente,
+      conservação e sustentabilidade. <br> Nossa missão é conscientizar leitores sobre a importância <br>
+      da preservação da natureza, <br> trazendo reportagens, dicas e curiosidades que inspiram ações <br>
+      positivas em todo o mundo. <br> Junte-se a nós e faça parte dessa jornada verde!</p>
+            </div>
+        <div class="foteer2"><h2>Contato</h2>
+    <p>Email: contato@naturenews.com</p>
+    <p>Telefone: (11) 99999-9999</p>
+    <p>Endereço: Rua Verde Esperança, 123 - São Paulo, SP</p>
+        </div>
+        <div class="foteer3"><h2>Redes sociais</h2>
+        <p>Siga o Mundo da Natureza nas redes sociais e fique por dentro das novidades, campanhas e conteúdos exclusivos:
+<br>
+Facebook: @MundoDaNaturezaOficial
+<br>
+Instagram: @mundo.natureza
+<br>
+Twitter/X: @MundoNaturezaBR
+<br>
+YouTube: Mundo da Natureza
+<BR></BR>
+Junte-se a nossa comunidade verde e ajude a espalhar consciência ambiental!</p>
+        </div>
+    
+    </footer>
+
+</body>
+</html>
